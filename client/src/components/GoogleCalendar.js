@@ -3,7 +3,7 @@ import { gapi } from 'gapi-script';
 import './GoogleCalendar.css';
 
 const CLIENT_ID = '1025583778510-nhiumsp7ohboveaj8lcbqmstfopup17q.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyAWhQF4XMLansrLQRNk3Cx0kwQALO2Rnf8';
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const SCOPES = 'https://www.googleapis.com/auth/calendar.events';
 const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
 

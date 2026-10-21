@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Client app dependencies and local environment files
+/client/node_modules/
+.env
+.env.*
+!.env.example
+/client/.env
+/client/.env.*
+!/client/.env.example

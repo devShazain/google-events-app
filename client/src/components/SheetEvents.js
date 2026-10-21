@@ -15,7 +15,7 @@
         const [showForm, setShowForm] = useState(false);
 
         const SPREADSHEET_ID = '142ofxNSx4iqQfNmyWqQndI8U5fuIVkI0rmwO4c69xB8';
-        const API_KEY = 'AIzaSyAWhQF4XMLansrLQRNk3Cx0kwQALO2Rnf8';
+        const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
         const RANGE = 'Sheet1!A2:D';
 
         const SHEET_URL = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`;
